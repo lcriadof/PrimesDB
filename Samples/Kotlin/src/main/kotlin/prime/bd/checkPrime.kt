@@ -15,7 +15,7 @@ import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.core.config.Configurator
 import java.nio.file.Paths
 
-// explicación de la función esPrimoBaseDatos() en README.md (mismo directorio)
+// explicación de la función esPrimoBaseDatos() en checkPrime.md (mismo directorio)
 fun esPrimoBaseDatos(numero: Int, baseDatos: ByteArray): Int {
     if (numero in listOf(1, 2, 3, 5, 7)) return 1 // 1
     val ultimoDigito = numero % 10 // 2
