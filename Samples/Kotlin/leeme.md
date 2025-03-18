@@ -9,7 +9,7 @@ Versión kotlin
 - propósito: comprueba si el número introducido es primo (gemelo a checkPrime.py)
 - rango: puede comprobar cualquier número contenido en 0000.pdb, es decir, entre el 11 y 1.342.177.289
    
-#### checkPrime_ver2.kt:
+### checkPrime_ver2.kt:
 - ubicación: src/main/kotlin/prime/bd
 - propósito: comprueba si el número introducido es primo 
 - rango: puede comprobar cualquier número contenido en 0000.pdb, 0001.pdb y 0002.pdb, es decir, entre el 11 y 4.026.531.849
