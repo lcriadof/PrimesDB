@@ -56,6 +56,6 @@ Abre el navegador y ve a:
         – Últimos 8 números: 4.026.531.849 | 4.026.531.847 | 4.026.531.843 | 4.026.531.841 | 4.026.531.839 | 4.026.531.837 | 4.026.531.833 | 4.026.531.831
 
 ### primo.kt:
-
-Clase para calcular número primos que se utiliza desde compileBD_ver2.kt
+- ubicación: src/main/kotlin/prime/bd
+- propósito: Clase para calcular número primos que se utiliza desde compileBD_ver2.kt
 
