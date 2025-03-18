@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="INFO">
+    <Appenders>
+        <RollingFile name="fichero_rotativos"
+                     fileName="./log/log_actual.log"
+                     filePattern="./log/log_%i.log">  // 1
+            <PatternLayout>
+                <Pattern>%d{yyyy/MM/dd HH:mm:ss,SSS} %r [%-6p] [%t] %c{3} %C{3}.%M(%F:%L) – %m%n</Pattern>  // 2
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="2MB" />  // 3
+            </Policies>
+            <DefaultRolloverStrategy max="10" />  // 4
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="TRACE">  <!-- 5 -->
+            <AppenderRef ref="fichero_rotativos"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
+
+
+

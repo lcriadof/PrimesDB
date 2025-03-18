@@ -39,9 +39,8 @@ fun esPrimoBaseDatos(numero: Int, baseDatos: ByteArray): Int {
 
 fun main() {
 
+    var archivo = java.io.File("../../PrimesDB/0000.pdb")
 
-
-    val archivo = java.io.File("../../PrimesDB/0000.pdb")
     if (!archivo.exists()) {
         println("No se encontró la base de datos de primos.")
         return
@@ -49,7 +48,8 @@ fun main() {
 
     val baseDatos = archivo.readBytes()
 
-    val numero = 756101
+    //val numero = 756101
+    val numero = 11
     if (numero > 1_342_177_280) {
         println("Introduzca un número válido menor o igual a 1342177280")
     }else{
