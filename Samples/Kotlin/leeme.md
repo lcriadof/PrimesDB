@@ -6,31 +6,32 @@ Versión kotlin
 ## Comprobar si el número es PRIMO usando la Base de Datos de Números Primos
 ### checkPrime.kt:
 - ubicación: src/main/kotlin/prime/bd
-- propósito: comprueba si el número introducido es primo (gemelo a checkPrime.py)
-- rango: puede comprobar cualquier número contenido en 0000.pdb, es decir, entre el 11 y 1.342.177.289
+- propósito: Comprueba si el número introducido es primo (gemelo a checkPrime.py)
+- rango: Puede comprobar cualquier número contenido en 0000.pdb, es decir, entre el 11 y 1.342.177.289
    
 ### checkPrime_ver2.kt:
 - ubicación: src/main/kotlin/prime/bd
-- propósito: comprueba si el número introducido es primo 
-- rango: puede comprobar cualquier número contenido en 0000.pdb, 0001.pdb y 0002.pdb, es decir, entre el 11 y 4.026.531.849
+- propósito: Comprueba si el número introducido es primo 
+- rango: Puede comprobar cualquier número contenido en 0000.pdb, 0001.pdb y 0002.pdb, es decir, entre el 11 y 4.026.531.849
 
 ### chekPrime.ipynb:
 - ubicación: notebooks
 - propósito: kotlin-jupyter-notebook gemelo a checkPrime.kt
-- rango: puede comprobar cualquier número contenido en 0000.pdb
+- rango: Puede comprobar cualquier número contenido en 0000.pdb
 
 
 ### docker chekPrime.ipynb:
 Este Docker está diseñado para que cualquier usuario, incluso sin experiencia en Kotlin, pueda verificar si un número es primo utilizando un Jupyter Notebook con soporte para Kotlin.
 
 - docker instalación:<br> docker pull lcriadof/jupyter:kotlin.v4<br><br>
-- docker ejecución: <br>docker run --name jupyter-kotlin -p 8888:8888 lcriadof/jupyter:kotlin.v3<br><br>
-- docker [acceso](http://localhost:8888)<br><br>
+- docker ejecución: <br>docker run --name jupyter-kotlin -p 8888:8888 lcriadof/jupyter:kotlin.v4<br><br>
 
-FAQ: Una vez en ejecución ¿cómo probar si un número es primo?
-Abre el navegador y ve a:
-📌 http://localhost:8888/lab/tree/work/checkPrime.ipynb
 
+FAQ: Una vez en ejecución el docker ¿cómo probar si un número es primo?
+
+1.- Abre el navegador
+2.- http://localhost:8888/lab/tree/work/chekPrime.ipynb
+![img.png](img.png)
 
 ## Generación de la Base de Datos de Números Primos
 
@@ -38,12 +39,12 @@ Abre el navegador y ve a:
 - ubicación: src/main/kotlin/prime/bd
 - propósito: Programa que calcula los primos del primer bloque (0000.pdb) y genera el fichero de la base de datos. (gemelo a compileDB.py)
 - algoritmo utilizado: Criba de Eratóstenes mejorado con la raiz cuadrada
-- es muy eficiente, tarda unos pocos minutos ()
+- es muy eficiente, tarda unos pocos minutos
 
 ### compileBD_ver2.kt
 - ubicación: src/main/kotlin/prime/bd
-- propósito: Programa que calcula los primos de los bloques (0000.pdb, 0001.pbd y 0002.pbd) y genera el fichero de la base de datos. (gemelo a compileDB.py)
-- algoritmo utilizado: raiz cuadrada (menos eficiente, pero permite comprobar que se obtiene el mismo 0000.pbd)
+- propósito: Programa que calcula los primos de los bloques (0000.pdb, 0001.pbd y 0002.pbd) y genera el fichero de la base de datos (evolución de compileDB.kt)
+- algoritmo utilizado: Raiz cuadrada (menos eficiente, pero permite comprobar que se obtiene el mismo 0000.pbd)
   - tiempo aproximado de generación con un equipo Intel Core i9-11900K de 11ª generación y 64GB de RAM
     #### 0000.pdb -> 39 minutos
         - Primeros 8 números: 29 | 27 | 23 | 21 | 19 | 17 | 13 | 11
